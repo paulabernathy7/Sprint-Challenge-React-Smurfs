@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
+import { BrowserRouter as Router } from "react-router-dom";
+
 
 import "./App.css";
 import SmurfForm from "./components/SmurfForm";
@@ -20,7 +22,7 @@ class App extends Component {
       .catch(err => {});
   }
 
-  smurfsData = data => this.setState({ smurfs: data })
+  smurfsData = data => this.setState({ smurfs: data }) // sets new smurf data to state
     
   
   // add any needed code to ensure that the smurfs collection exists on state and it has data coming from the server
