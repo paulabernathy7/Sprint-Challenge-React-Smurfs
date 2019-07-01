@@ -29,11 +29,22 @@ In this challenge, you will create a Single Page Application complete with Clien
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
 - [ ] Explain the differences between `client-side routing` and `server-side routing`.
-- [ ] What does HTTP stand for?
-- [ ] What does CRUD stand for?
-- [ ] Which HTTP methods can be mapped to the CRUD acronym that we use when interfacing with APIs/Servers.
-- [ ] Mention three tools we can use to make AJAX requests.
+      server-side routing is when clicking on a link changes a lot of things happen. For example, when click on a link the whole page refreshes. A new GET request has been made to the server, the server responds with a new document.
 
+  Client side routing is when only elements on the page will change. The whole document will not refresh. When a user clicks on a link the route is handled by the JS on the page.
+
+- [ ] What does HTTP stand for?
+      HyperText transer protocol
+
+- [ ] What does CRUD stand for?
+      create read update delete which is the foundation of webpages.
+-
+
+[ ] Which HTTP methods can be mapped to the CRUD acronym that we use when interfacing with APIs/Servers.
+The POST method is used to create, Get is used to read, PUT is used for updating, and DELETE is used for deleting.
+
+- [ ] Mention three tools we can use to make AJAX requests.
+      Axios, fetch, and superagent
 
 ## Project Set Up
 
@@ -55,9 +66,10 @@ Follow these steps to set up and work on your project:
 
 Follow these steps for completing your project:
 
-- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo).
+- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's Repo).
 - [ ] Add your Project Manager as a Reviewer on the Pull-request
-- [ ] PM then will count the HW as done by  merging the branch back into master.
+- [ ] PM then will count the HW as done by merging the branch back into master.
+
 ## Minimum Viable Product
 
 The MVP of this project will be broken up between 2 stages. Follow each step and be sure to use your design/style skills to make this application look professional.
@@ -111,15 +123,15 @@ Add a Router to this application by using React Router.
 // output: `A list of all the smurfs in the Smurf DB will be returned`
 [
   {
-    name: 'Brainy',
+    name: "Brainy",
     age: 211,
-    height: '5cm',
+    height: "5cm",
     id: 0
   },
   {
-    name: 'Smurfette',
+    name: "Smurfette",
     age: 122,
-    height: '12cm',
+    height: "12cm",
     id: 1
   }
 ];
